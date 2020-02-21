@@ -1,0 +1,58 @@
+
+.header {
+    grid-area: header;
+    background: red;
+    text-align: center;
+  }
+/* .header:hover{
+  background: purple;
+} */
+  .email  {
+  color: green;
+  text-decoration: none;
+}
+  .email:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+  .link  {
+color: orange;
+text-decoration: none;
+}
+  .link:hover {
+color: green;
+text-decoration: underline;
+}
+  .main {
+    grid-area: resumetext;
+    Background: pink;
+  }
+  .photo1 {
+    grid-area: photo1;
+    /* background: green; */
+  }
+  .photo2 {
+    grid-area: photo2;
+    /* background: green; */
+  }
+  .footer {
+    grid-area: footer;
+    background: teal;
+  }
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+    display: grid;
+    grid-template-columns: 400px auto 400px;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-rows: auto auto auto;
+    /* grid-template-rows: repeat(3, 200px); */
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+
+    grid-template-areas:
+    "header header header"
+    "photo1 resumetext photo2"
+    "footer footer footer"
+}
