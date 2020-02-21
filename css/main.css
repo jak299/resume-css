@@ -1,32 +1,41 @@
-
+body {
+  background: pink;
+}
 .header {
+  font-family: Noto Sans KR;
     grid-area: header;
-    background: red;
+    /* background: red; */
     text-align: center;
   }
 /* .header:hover{
   background: purple;
 } */
   .email  {
-  color: green;
+  color: black;
   text-decoration: none;
 }
   .email:hover {
-  color: yellow;
+  color: darkgreen;
   text-decoration: underline;
 }
+#name {
+  font-family: Noto Sans KR;
+  font-size: 44px;
+  color: purple;
+}
+  .main {
+    font-family: Roboto Slab ;
+    grid-area: resumetext;
+    /* Background: pink; */
+  }
   .link  {
-color: orange;
+color: darkGreen;
 text-decoration: none;
 }
   .link:hover {
-color: green;
+color: purple;
 text-decoration: underline;
 }
-  .main {
-    grid-area: resumetext;
-    Background: pink;
-  }
   .photo1 {
     grid-area: photo1;
     /* background: green; */
@@ -39,7 +48,10 @@ text-decoration: underline;
     grid-area: footer;
     background: teal;
   }
-
+  h2,h3 {
+    color: purple;
+    font-family: Noto Sans KR;
+  }
 .container {
   max-width: 1400px;
   margin: auto;
